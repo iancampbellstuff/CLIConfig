@@ -1,0 +1,15 @@
+[core]
+	editor = vi
+	askpass = git-gui--askpass
+[diff]
+	tool = vimdiff2
+[merge]
+	tool = vimdiff2
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[url "https://"]
+        insteadOf = git://
+[alias]
+	list = log --pretty=oneline
