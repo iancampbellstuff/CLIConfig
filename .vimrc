@@ -1,5 +1,5 @@
 set nocompatible
-mouse=a					" mouse support
+set mouse=a				" mouse support
 set encoding=utf8
 set ai					" auto indent
 set si					" smart indent
