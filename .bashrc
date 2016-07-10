@@ -8,7 +8,7 @@ alias cd~='cd ~'
 alias cd-='cd -'
 alias back='cd -'
 
-alias ls='ls -alh --color=auto'
+alias ls='ls -aFhlX --group-directories-first --color=auto'
 alias restart='clear; source ~/.bashrc'
 alias open='explorer .' # or 'start .'
 
