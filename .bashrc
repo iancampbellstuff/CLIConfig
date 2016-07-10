@@ -9,7 +9,7 @@ alias cd-='cd -'
 alias back='cd -'
 
 alias ls='ls -aFhlX --group-directories-first --color=auto'
-alias restart='clear; source ~/.bashrc'
+alias restart='clear; exec bash' # or 'clear; source ~/.bashrc'
 alias open='explorer .' # or 'start .'
 
 # example -- findtext "some text"
