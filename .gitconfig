@@ -12,4 +12,6 @@
 [url "https://"]
         insteadOf = git://
 [alias]
-	list = log --pretty=oneline
+	ls = log --pretty=oneline
+	b = branch -av
+
