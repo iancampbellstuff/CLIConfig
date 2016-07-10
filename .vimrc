@@ -7,6 +7,8 @@ set smarttab
 set nowrap				" disable text wrapping
 set backspace=indent,eol,start		" backspace handling
 set nostartofline			" disable auto cursor placement
+set cul					" highlight current line
+hi CursorLine term=none cterm=none ctermbg=Blue
 filetype on				" filetype recognition
 filetype plugin on			" filetype features
 filetype indent plugin on
