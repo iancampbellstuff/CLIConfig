@@ -13,4 +13,5 @@
         insteadOf = git://
 [alias]
 	ls = log --pretty=oneline
+	b = branch -av
 
