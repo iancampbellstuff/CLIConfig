@@ -14,7 +14,7 @@
 [alias]
 	ls = log --pretty=oneline
 	logs = log --name-status --find-renames --graph
-	b = branch -av
+	b = branch --list -vv
 	update = "!f() { \
 		now=`date`; \
 		GIT_COMMITTER_DATE='$now'; \
