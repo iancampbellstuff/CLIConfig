@@ -1,0 +1,25 @@
+root = true
+
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+
+# indent settings
+indent_style = tab
+indent_size = tab
+tab_width = 4
+
+# line settings
+end_of_line = crlf
+max_line_length = 300
+insert_final_newline = true
+
+[{*.json,*.css}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+max_line_length = 0
+
+[index.html]
+insert_final_newline = false
