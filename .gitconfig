@@ -13,5 +13,5 @@
         insteadOf = git://
 [alias]
 	ls = log --pretty=oneline
+	logs = log --name-status --find-renames --graph
 	b = branch -av
-
