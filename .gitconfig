@@ -12,6 +12,13 @@
 [url "https://"]
         insteadOf = git://
 [alias]
-	ls = log --pretty=oneline
-	b = branch -av
-
+	ls = log --pretty=oneline --graph
+	lsa = log --name-status --find-renames --graph
+	lsb = branch --list -vv
+	update = "!f() { \
+		now=`date`; \
+		GIT_COMMITTER_DATE='$now'; \
+		git commit --amend --date '$now'; \
+	}; f"
+[fetch]
+	prune = true
