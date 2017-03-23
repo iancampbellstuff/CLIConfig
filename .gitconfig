@@ -20,3 +20,5 @@
 		GIT_COMMITTER_DATE='$now'; \
 		git commit --amend --date '$now'; \
 	}; f"
+[fetch]
+	prune = true
