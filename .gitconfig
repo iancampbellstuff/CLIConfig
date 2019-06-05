@@ -10,11 +10,14 @@
 	status = auto
 	branch = auto
 [url "https://"]
-        insteadOf = git://
+	insteadOf = git://
 [alias]
 	ls = log --pretty=oneline --graph
 	lsa = log --name-status --find-renames --graph
 	lsb = branch --list -vv
+	lss = "!f() { \
+		git stash list; \
+	}; f"
 	latest = "!f() { \
 		branch_name=`git symbolic-ref --short HEAD`; \
 		git pull origin $branch_name; \
@@ -26,6 +29,9 @@
 		now=`date`; \
 		GIT_COMMITTER_DATE='$now'; \
 		git commit --amend --date '$now'; \
+	}; f"
+	clear = "!f() { \
+		git clean -fd; \
 	}; f"
 [fetch]
 	prune = true
