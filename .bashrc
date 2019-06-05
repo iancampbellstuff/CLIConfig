@@ -26,4 +26,3 @@ function findtext() {
 function findfiles() {
         find "`pwd`" -name "$@"
 }
-

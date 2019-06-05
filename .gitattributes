@@ -1,0 +1,8 @@
+# See https://help.github.com/en/articles/dealing-with-line-endings for reference.
+
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Declare files that will always have LF line endings on checkout.
+* .bashrc text eol=lf
+* .vimrc text eol=lf
