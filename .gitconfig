@@ -10,7 +10,7 @@
 	status = auto
 	branch = auto
 [url "https://"]
-        insteadOf = git://
+	insteadOf = git://
 [alias]
 	ls = log --pretty=oneline --graph
 	lsa = log --name-status --find-renames --graph
