@@ -30,5 +30,8 @@
 		GIT_COMMITTER_DATE='$now'; \
 		git commit --amend --date '$now'; \
 	}; f"
+	clear = "!f() { \
+		git clean -fd; \
+	}; f"
 [fetch]
 	prune = true
