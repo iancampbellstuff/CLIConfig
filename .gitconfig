@@ -12,6 +12,7 @@
 [url "https://"]
 	insteadOf = git://
 [alias]
+	whatbranch = rev-parse --abbrev-ref HEAD
 	ls = log --pretty=oneline --graph
 	lsa = log --name-status --find-renames --graph
 	lsb = branch --list -vv
