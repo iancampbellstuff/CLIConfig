@@ -1,38 +1,34 @@
 [core]
-	editor = vi
 	askpass = git-gui--askpass
+	editor = vi
 [diff]
 	tool = vimdiff2
 [merge]
 	tool = vimdiff2
 [color]
+	branch = auto
 	diff = auto
 	status = auto
-	branch = auto
 [url "https://"]
 	insteadOf = git://
 [alias]
-	whatbranch = rev-parse --abbrev-ref HEAD
+	clear = clean -fd
 	ls = log --pretty=oneline --graph
 	lsa = log --name-status --find-renames --graph
 	lsb = branch --list -vv
-	lss = "!f() { \
-		git stash list; \
+	lss = stash list
+	whatbranch = rev-parse --abbrev-ref HEAD
+	drop = "!f() { \
+		git branch -D $1; \
 	}; f"
 	latest = "!f() { \
 		branch_name=`git symbolic-ref --short HEAD`; \
 		git pull origin $branch_name; \
 	}; f"
-	drop = "!f() { \
-		git branch -D $1; \
-	}; f"
 	update = "!f() { \
 		now=`date`; \
 		GIT_COMMITTER_DATE='$now'; \
 		git commit --amend --date '$now'; \
-	}; f"
-	clear = "!f() { \
-		git clean -fd; \
 	}; f"
 [fetch]
 	prune = true
